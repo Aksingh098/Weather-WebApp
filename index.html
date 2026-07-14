@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h2>Weather</h2>
+        <div class="weather-input">
+          <label for="city_input" class="visually-hidden">City name</label>
+          <input
+            type="text"
+            name="city"
+            id="city_input"
+            placeholder="Enter city name"
+            aria-label="City name"
+          />
+          <button type="button" id="searchButton">
+            <i class="fa-solid fa-magnifying-glass"></i> Search
+          </button>
+          <button type="button" id="locationButton">
+            <i class="bx bx-current-location"></i> Current Location
+          </button>
+        </div>
+      </header>
+
+      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
