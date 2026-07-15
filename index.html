@@ -62,6 +62,47 @@
             </p>
           </div>
         </section>
+        <section class="card details-card" aria-label="Weather details">
+          <h3 class="section-title">Details</h3>
+          <div class="details-grid">
+            <div class="detail">
+              <i class="bx bx-water"></i>
+              <p class="detail__label">Humidity</p>
+              <p class="detail__value"><span id="humidity">--</span>%</p>
+            </div>
+            <div class="detail">
+              <i class="bx bx-wind"></i>
+              <p class="detail__label">Wind</p>
+              <p class="detail__value"><span id="wind">--</span> km/h</p>
+            </div>
+            <div class="detail">
+              <i class="fa-solid fa-temperature-half"></i>
+              <p class="detail__label">Feels like</p>
+              <p class="detail__value"><span id="feelsLike">--</span>&deg;C</p>
+            </div>
+            <div class="detail">
+              <i class="bx bx-tachometer"></i>
+              <p class="detail__label">Pressure</p>
+              <p class="detail__value"><span id="pressure">--</span> hPa</p>
+            </div>
+            <div class="detail">
+              <i class="bx bx-show"></i>
+              <p class="detail__label">Visibility</p>
+              <p class="detail__value"><span id="visibility">--</span> km</p>
+            </div>
+            <div class="detail">
+              <i class="bx bx-cloud"></i>
+              <p class="detail__label">Cloudiness</p>
+              <p class="detail__value"><span id="cloudiness">--</span>%</p>
+            </div>
+          </div>
+        </section>
+        <section class="card forecast-card" aria-label="5 day forecast">
+          <h3 class="section-title">5-Day Forecast</h3>
+          <div class="forecast-grid" id="forecastList">
+            
+          </div>
+        </section>
       </main>
     </div>
     <script src="script.js"></script>
