@@ -40,7 +40,29 @@
         </div>
       </header>
 
-      
+      <main class="weather-data">
+        <section class="card current-card">
+          <div class="current-weather">
+            <div class="current-weather__readout">
+              <p class="eyebrow">Now</p>
+              <h2 id="temperature" class="temp">--&deg;</h2>
+              <p id="description" class="condition">Crazy Storm</p>
+            </div>
+            <div class="weather-icon">
+              <img id="weatherIcon" src="" alt="" />
+            </div>
+          </div>
+          <hr />
+          <div class="card-footer">
+            <p>
+              <i class="bx bx-calendar"></i> <span id="dateDisplay">--</span>
+            </p>
+            <p>
+              <i class="bx bx-map"></i> <span id="locationDisplay">--</span>
+            </p>
+          </div>
+        </section>
+      </main>
     </div>
     <script src="script.js"></script>
   </body>

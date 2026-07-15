@@ -1,14 +1,12 @@
 :root {
-  
-  --bg-color1: #0f172a;   
-  --bg-color2: #1e293b;   
-  --bg-color3: #263244;   
-  --accent-sky: #38bdf8;  
+  --bg-color1: #0f172a;
+  --bg-color2: #1e293b;
+  --bg-color3: #263244;
+  --accent-sky: #38bdf8;
   --accent-amber: #fbbf24;
   --text-primary: #f1f5f9;
   --text-muted: #94a3b8;
 
-  
   --font-display: "Space Grotesk", sans-serif;
   --font-body: "Inter", sans-serif;
 }
@@ -40,7 +38,6 @@ body {
   max-width: 1100px;
   margin: 0 auto;
 }
-
 
 .header {
   position: sticky;
@@ -92,10 +89,89 @@ body {
   outline-offset: 2px;
 }
 #searchButton {
-  background-color: #ffffff;
-  color: var(--bg-color1);
+  background: var(--bg-color3);
+
+  color: var(--text-primary);
 }
 #locationButton {
   background-color: var(--accent-sky);
   color: #04202e;
+}
+.card {
+  background-color: var(--bg-color2);
+  padding: 20px;
+  border-radius: 15px;
+}
+.card:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+.current-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1;
+}
+.eyebrow {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.temp {
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--accent-amber);
+  text-shadow: 0 0 24px rgba(251, 191, 36, 0.35);
+}
+.condition {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+.weather-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.08),
+    0 12px 30px rgba(0, 0, 0, 0.35);
+}
+.weather-icon img {
+  width: 72px;
+  height: 72px;
+}
+.current-card hr {
+  height: 1px;
+  border: none;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 18px 0;
+}
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+.card-footer i {
+  color: var(--accent-sky);
+  margin-right: 6px;
 }
